@@ -1,0 +1,10 @@
+
+[dir = "rtl"] .products{
+    float: right;
+}
+
+[dir = "rtl"] .products-filter{
+    float: left;
+    margin: 50px 0;
+    margin-right: 50px;
+}

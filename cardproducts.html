@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Shopping cart | Cart page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-rtl.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="header-content">
+            <a href="index.html" class="brand"> Shopping cart </a>
+
+            <nav>
+                <ul id="links">
+                    <li> <a href="login.html"> Sign in</a> </li>
+                    <li> <a href="register.html"> Sign up</a> </li>
+                </ul>
+
+                <ul id="user_info">
+                    <li id = "en-lang"> En </li>
+                    <li id = "ar-lang"> Ar </li>
+                    <li> <a href="profile.html" id="myuser"> </a></li>
+                    <li> <a href="favorite.html"> Favorits</a></li>
+                    <li> <a href="myproducts.html"> My products</a></li>
+
+                    <li class="shopping-list">
+                        <i class="fa fa-shopping-cart shoppingCartIcon" aria-hidden="true"></i>
+                       <span class="badge"></span>
+
+                       <div class="cart-products">
+                           <div></div>
+                        <a href="cardproducts.html"> View All prpducts</a>
+                       </div>
+                   </li> <!-- shopping-list-->
+
+                    <li> <a href="#" id="logout"> Logout </a></li>
+                  
+                </ul>
+            </nav>
+
+
+            </div> <!-- header-content-->
+        </div> <!-- container-->
+    </header>
+
+
+
+ 
+        <section class="home">
+         <div class="container">
+                <div class="products"></div>
+                <div class="no-products"></div> 
+         </div> 
+         
+         <a href="createproduct.html" class="create-product">
+            <i class="fa fa-plus"></i> 
+         </a>
+
+        </section> 
+
+<script src="js/user.js"></script>
+<script src="js/langDir.js"></script>
+<script src="js/cartMenu.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

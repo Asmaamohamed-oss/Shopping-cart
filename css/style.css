@@ -1,0 +1,420 @@
+
+
+body{
+ font-family: 'Oswald', sans-serif;
+}
+    
+button{
+    font-family: 'Oswald', sans-serif
+}
+
+* { 
+    margin:0 ;
+    padding: 0 ;
+    box-sizing: border-box;
+}
+
+:root {
+--main-color :#183f79 ;    
+--header-color : #f16129;
+--form-color : #d4d9dd;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+header{
+    padding : 10px 0 ;
+    background-color:   var(--main-color);
+    
+}
+.header-content{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-content .brand {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav  ul {
+    display: flex;
+    list-style: none;
+    color: #fff;
+}
+
+
+
+nav li a {
+    text-decoration: none;
+    display: block; 
+    color : #fff;
+    margin:  0 5px;
+    min-width: 50px;
+    padding: 10px;
+    
+}
+
+nav ul#user_info{
+    display : none;
+    align-items: center;
+
+}
+nav ul#user_info li{
+    position: relative;
+    margin: 0 7px;
+}
+nav ul#user_info li i {
+    font-size: 19px;
+    cursor: pointer;
+
+}
+nav ul#user_info li span.badge{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--header-color);
+    text-align: center;
+    display: block;
+    font-size: 10px;
+    position: absolute;
+    line-height: 20px;
+    top:-13px;
+    right: -15px;
+    display: none;
+}
+nav ul#user_info li .cart-products{
+    position: absolute;
+    width: 180px;
+    transform: translate(-30% , 0);
+    background-color: var(--form-color);
+    top: 45px;
+    padding: 10px;
+    display:none;
+}
+nav ul#user_info li .cart-products a {
+    display: block;
+    margin: 3px;
+    padding: 3px;
+   background-color: var(--header-color);
+    text-align: center;
+    border-radius: 3px;
+}
+
+
+/******* search input********/
+
+#search{
+    display: block;
+    width: 60%;
+    padding: 5px;
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 5px;
+    border: 1px solid #868c92;
+    color: #565a5e;
+    margin-top: 10px;
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************form ***********************/
+
+.section-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 40%;
+    background-color: var(--form-color);
+    text-align: center;
+    border-radius: 3px;
+    padding: 20px;
+}
+
+.section-form h2 {
+    color : var(--header-color);
+    font-size: 2.5rem;
+}
+
+
+.section-form input{
+
+    display : block;
+    margin: 4px 0;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 10px ;
+    font-family: 'Oswald', sans-serif;
+    outline: none;
+
+}
+
+.section-form input[type=submit]{
+    font-size: 25px;
+    text-transform: uppercase;
+    height: auto;
+    cursor: pointer;
+}
+
+.section-form input[type=submit]:hover{
+    opacity: 0.5;
+}
+::placeholder{
+    color: var(--header-color);
+}
+
+.section-form span{
+    color:#0e1412;
+}
+
+
+
+
+
+/********** products*****************/
+.products-box{
+    overflow: hidden;
+}
+
+.products{
+    width: 60%;
+    margin: 50px 0;
+    float: left;
+}
+.products-filter{
+    width: 35%;
+    margin: 50px 0 ;
+    margin-left: 5%;
+    float: right;
+}
+
+.product-item{
+    display: flex;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    min-width: 150px;
+}
+
+.product-item-img{
+     margin-right: 10px;
+     width: 30%;
+ }
+.product-item-desc {
+    color:#868c92;
+}
+.product-item-desc a{
+    color: #868c92 ;
+    font-size: 25px;
+    display:block;
+    cursor:pointer;
+}
+.product-item-action{
+    text-align: right;
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item-action .add-to-card{
+    display: block;
+    margin-left: auto;
+    border: 0;
+    border-radius: 3px;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+
+.product-item-action .favorite{
+    cursor: pointer;
+    display:block;
+    width:20px;
+    margin-left: auto;
+}
+
+/* item-Details*/
+
+.item-Details img{
+    width:100%;
+    margin: 10px 0;
+    padding: 2px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    height:500px;
+    object-fit:cover;
+}
+
+
+
+/*********** create product*********/
+
+.create-product{
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: #244f77;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transition: all 0.3s ;
+}
+.create-product:hover{
+    opacity: 0.8;
+}
+
+
+/*size-filter*/
+#size-filter{
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 10px ;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color : var(--form-color);
+
+}
+
+.filter-title{
+    color: var(--main-color);
+}
+
+
+
+.edit-product{
+    display: block;
+    border-radius: 2px;
+    border: 0;
+    background-color: #f16129;
+    cursor:pointer ;
+    width: 120px;
+    height: 40px;
+    color: #fff;
+    padding: 5px;
+    transition: all 0.2s;
+
+}
+.edit-product:hover{
+    color:var(--header-color);
+    border: 1px solid var(--header-color);
+    background-color: #fff;
+}
+
+/*item.qty*/
+.item-qty{
+    display: inline-block;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #9ca3a8;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+}
+
+.cart-style:hover{
+    background-color: var(--header-color);
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+/********* profile***********/
+
+.user-avater{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px 0;
+    /* border: 1px solid blue; */
+}
+
+
+/*Edit profile */
+
+#editProfile-form{
+    margin: 50px 0;
+}
+
+#editProfile-form input{
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border: 1px solid #a6abaf;
+}
+
+
+#editProfile-form input[type = submit]{
+    cursor: pointer;
+    background-color: var(--main-color);
+    transition: all 0.2s;
+    width: 30%;
+    margin: auto;
+    color: #ddd;
+    border-radius: 3px;
+}
+
+#editProfile-form input[type = submit]:hover{
+    opacity: 0.8;
+}
+
+#en-lang , #ar-lang{
+    color:#ddd;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
